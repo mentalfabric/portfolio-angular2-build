@@ -13,14 +13,14 @@ interface Navigation {
 export class NavComponent {
     menuItems : Navigation[] = [{
         text: "About",
-        url: "#about"
+        url: "/about"
     },
     {
         text: "Projects",
-        url: "#projects"
+        url: "/projects"
     },
     {
         text: "Contact",
-        url: "#contact"
+        url: "/contact"
     }]
 }

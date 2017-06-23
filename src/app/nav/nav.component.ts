@@ -11,6 +11,7 @@ interface Navigation {
 })
 
 export class NavComponent {
+    state : string = "active";
     menuItems : Navigation[] = [{
         text: "About",
         url: "/about"
@@ -23,4 +24,7 @@ export class NavComponent {
         text: "Contact",
         url: "/contact"
     }]
+    toggleState() {
+        return "active";
+    }
 }

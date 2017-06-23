@@ -1,12 +1,14 @@
-<h1>
-    PROJECTS WORKS!
-</h1>
+<div id="projects-container" [@fadeInAnimation]="state">
+    <h1>
+        PROJECTS WORKS!
+    </h1>
 
-<ul>
-    <li *ngFor="let projectItem of projectItems" class="item">
-        <div>{{ projectItem.thumbnail }}</div>
-        <h2>{{ projectItem.title }}</h2>
-        <p>{{ projectItem.description}}</p>
-        <a href="{{projectItem.url}}">{{ projectItem.url }}</a>
-    </li>
-</ul>
+    <ul>
+        <li *ngFor="let projectItem of projectItems" class="item">
+            <div>{{ projectItem.thumbnail }}</div>
+            <h2>{{ projectItem.title }}</h2>
+            <p>{{ projectItem.description}}</p>
+            <a href="{{projectItem.url}}">{{ projectItem.url }}</a>
+        </li>
+    </ul>
+</div>
